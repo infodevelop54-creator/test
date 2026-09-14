@@ -31,8 +31,8 @@ jobs:
           gradle-version: 8.2
 
       # 4. Делаем gradlew исполняемым (на Linux это обязательно)
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
+#      - name: Grant execute permission for gradlew
+#        run: chmod +x ./gradlew
 
       # 5. Собираем debug APK
       - name: Build debug APK
@@ -65,8 +65,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
+#      - name: Grant execute permission for gradlew
+#        run: chmod +x ./gradlew
 
       # Собираем release APK без подписи (assembleRelease)
       - name: Build release APK
